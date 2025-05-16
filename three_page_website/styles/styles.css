@@ -26,11 +26,21 @@
 
 .text {
   font-size: 15px;
-  padding-left: 20px;
 }
 
 .centered-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.heading {
+  color: #d96349;
+}
+
+a.class1:link,
+a.class1:visited {
+  color: #a8b3eb;
+  background-color: transparent;
+  text-decoration: none;
 }
