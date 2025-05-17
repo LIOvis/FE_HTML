@@ -34,13 +34,22 @@
   margin-right: auto;
 }
 
-.heading {
+.orange {
   color: #d96349;
+}
+
+.purple {
+  color: #a8b3eb;
 }
 
 a.class1:link,
 a.class1:visited {
   color: #a8b3eb;
   background-color: transparent;
-  text-decoration: none;
+}
+
+a.class2:link,
+a.class2:visited {
+  color: #d96349;
+  background-color: transparent;
 }
