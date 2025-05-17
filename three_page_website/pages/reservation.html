@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Labyrinth (1986) - Reservation Form</title>
+  </head>
+  <body style="background-color: #a8b3eb">
+    <header style="background-color: #d96349">
+      <table>
+        <th>
+          <img
+            title="Icon made by Mark Stoner on The Noun Project."
+            src="../images/purple_labyrinth_icon.png"
+            height="50"
+            width="50"
+            alt="Icon of a chartres labyrinth."
+          />
+        </th>
+        <th>
+          <h3><a class="class1" href="../index.html">Home</a></h3>
+        </th>
+        <th>
+          <h3><a class="class1" href="cast.html">Cast</a></h3>
+        </th>
+        <th>
+          <h3><a class="class1" href="soundtrack.html">Soundtrack</a></h3>
+        </th>
+      </table>
+    </header>
+    <div class="orange"><h1>Reservation Form for West Wycombe Park</h1></div>
+    <form action="https://httpbin.org/post" method="post">
+      <div class="field-wrapper" id="name-field">
+        <label for="name">Name (first & last):<br /><br /></label>
+        <input id="name" name="name" type="text" placeholder="Name:" required />
+      </div>
+      <div class="field-wrapper" id="email-field">
+        <label for="email"><br />Email:<br /><br /></label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Email:"
+          required
+        />
+      </div>
+      <div class="field-wrapper" id="phone-field">
+        <label for="phone"><br />Phone:<br /><br /></label>
+        <input id="phone" name="phone" type="tel" placeholder="Phone:" />
+      </div>
+      <div class="field-wrapper" id="start-field">
+        <label for="start-date"><br />Start Date:<br /><br /></label>
+        <input id="start-date" name="start-date" type="date" required />
+      </div>
+      <div class="field-wrapper" id="end-field">
+        <label for="end-date"><br />End Date:<br /><br /></label>
+        <input id="end-date" name="end-date" type="date" required />
+      </div>
+      <div class="field-wrapper" id="accommodations-field">
+        <p>Accommodations:</p>
+        <input
+          name="accommodations"
+          id="campsite"
+          type="radio"
+          value="campsite"
+          required
+        />
+        <label for="campsite">Campsite (£50/night)</label>
+        <input name="accommodations" id="hotel" type="radio" value="hotel" />
+        <label for="hotel">Basic Hotel (£150/night)</label>
+        <input name="accommodations" id="suite" type="radio" value="suite" />
+        <label for="suite">Deluxe Hotel Suite (£300/night)</label>
+      </div>
+      <div class="field-wrapper" id="tents-field">
+        <p>Accommodations (B):</p>
+        <input
+          name="tents"
+          id="not-renting"
+          type="checkbox"
+          value="not-renting"
+          required
+        />
+        <label for="not-renting"
+          >Providing My Own Tent/Not Camping (+£0/night)</label
+        >
+        <input
+          name="tents"
+          id="basic-tent"
+          type="checkbox"
+          value="basic-tent"
+        />
+        <label for="basic-tent">Basic Rental Tent (+£20/night)</label>
+        <input
+          name="tents"
+          id="deluxe-tent"
+          type="checkbox"
+          value="deluxe-tent"
+        />
+        <label for="deluxe-tent">Deluxe Rental Tent (+£60/night)</label>
+      </div>
+      <div class="field-wrapper" id="package-field">
+        <p>Guided Tours:</p>
+        <select name="tours" id="tours" required>
+          <option value="no-tour">No Tour</option>
+          <option value="basic-tour">Baisic Tour (+£30/day/person)</option>
+          <option value="deluxe-tour">Deluxe Tour (+£70/day/person)</option>
+        </select>
+      </div>
+      <div class="field-wrapper" id="additional-info-field">
+        <label for="additional-info"
+          ><br />Additional Information:<br /><br
+        /></label>
+        <textarea
+          name="additional-info"
+          id="additional-info"
+          rows="10"
+          cols="50"
+          placeholder="Please enter any additional information here:"
+        ></textarea>
+      </div>
+      <div class="field-wrapper" id="submit-field">
+        <br />
+        <button>Submit</button>
+      </div>
+    </form>
+    <br /><br />
+    <footer style="background-color: #d96349">
+      <div class="purple">
+        <h3 align="center">
+          <br />
+          Contact Us
+        </h3>
+      </div>
+      <div class="container">
+        <div class="purple" align="center">Phone: 0-1494-GOBLIN</div>
+        <div class="purple" align="center">
+          Email: chicken_bowler@labyrinth.com
+        </div>
+        <div class="purple" align="center">
+          Address:
+          <a
+            href="https://www.google.com/maps/place/West+Wycombe+Park/@51.6437513,-0.8047418,17z/data=!3m1!4b1!4m6!3m5!1s0x48768afc173b913d:0xac0bf926c0fc07ce!8m2!3d51.6437513!4d-0.8047418!16zL20vMDJfc2s4?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+            class="class1"
+            >Google Maps</a
+          >
+        </div>
+        <br />
+      </div>
+    </footer>
+  </body>
+</html>
